@@ -1,0 +1,94 @@
+body {
+  color:white;
+  text-align: center;
+  overflow-x: hidden;
+  /* text-transform: uppercase; */
+  font-weight: 500;
+  background: #355C7D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6C5B7B, #774694, #521d52);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6C5B7B, #774694, #521d52); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Turret Road', cursive;
+
+}
+
+.header{
+   background-image: url('https://media.giphy.com/media/pVGsAWjzvXcZW4ZBTE/giphy.gif');
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  /* background-size:cover; */
+  clip-path: polygon(
+  0 0, /* left top */
+  100% 0, /* right top */
+  100% 100%, /* right bottom */
+  0 90% /* left bottom */
+);
+  background-size: contain;
+  padding: 200px;
+  margin-bottom: 2px;
+
+  color: white; */
+
+}
+.about{
+  /* background: white; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows:50% 50%; */
+}
+.about .about-title {
+  height: 10px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.about .about-icons{
+  /* background: white; */
+  /* border:solid 2px black; */
+}
+.about .about-message{
+  /* background: white; */
+  /* border:solid 2px black; */
+}
+.skills{
+  display: flex;
+  justify-content: center;
+  clip-path: polygon(
+  0 14%, /* left top */
+  100% 0%, /* right top */
+  100% 90%, /* right bottom */
+  0 100% /* left bottom */
+  );
+  background-image: url('https://hdqwalls.com/download/pixel-art-bridge-night-cc-1366x768.jpg');
+  padding-top: 200px;
+  color:white;
+  margin-bottom: 10px;
+  /* background: blue; */
+}
+.skills .card{
+  padding-top:50px;
+  /* border:solid 2px white; */
+  height:70%;
+  width:40%;
+  margin-left:4px;
+  margin-right:4px;
+  background-color: rgba(70, 7, 110, 0.4);
+  transition: 0.8 cubic-bezier(0.2,1,0.2, 1);
+}
+
+.skills .card:hover{
+transform: translateY(-5px);
+}
+.skills .card i {
+  font-size: 4rem;
+}
+.projects{
+  /* background: yellow; */
+}
+.main{
+  display: grid;
+  grid-template-rows: 500px 500px 700px 500px;
+}
+.about-icons img{
+  height: 100px;
+  margin:3px;
+  padding: 10px;
+}
