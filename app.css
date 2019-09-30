@@ -11,6 +11,11 @@ body {
 
 }
 
+.main{
+  display: grid;
+  grid-template-rows: 500px 500px 700px 500px;
+}
+
 .header{
    background-image: url('https://media.giphy.com/media/pVGsAWjzvXcZW4ZBTE/giphy.gif');
   /* background-repeat: no-repeat; */
@@ -25,10 +30,12 @@ body {
   background-size: contain;
   padding: 200px;
   margin-bottom: 2px;
-
   color: white; */
 
 }
+
+
+/* ABOUT ***********************************************************************/
 .about{
   /* background: white; */
   display: grid;
@@ -40,14 +47,23 @@ body {
   grid-column-start: 1;
   grid-column-end: 3;
 }
-.about .about-icons{
-  /* background: white; */
-  /* border:solid 2px black; */
+
+.about-icons img{
+  height: 100px;
+  margin:3px;
+  padding: 10px;
+  transition: 0.8 cubic-bezier(0.2,1,0.2, 1);
+}
+ .about-icons img:hover{
+  transform: translateY(-5px);
 }
 .about .about-message{
   /* background: white; */
   /* border:solid 2px black; */
 }
+
+/* SKILS ***********************************************************************/
+
 .skills{
   display: flex;
   justify-content: center;
@@ -72,23 +88,21 @@ body {
   margin-right:4px;
   background-color: rgba(70, 7, 110, 0.4);
   transition: 0.8 cubic-bezier(0.2,1,0.2, 1);
+  box-shadow: 0 19px 39px rgba(0, 0, 0, 0.3),
+  0 15px 12px rgba(0, 0, 0, 0.1);
 }
 
 .skills .card:hover{
 transform: translateY(-5px);
+box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25)
 }
 .skills .card i {
   font-size: 4rem;
 }
-.projects{
+
+/* PROJECTS **********************************************************************************************888*/
+.projects-container{
+  display:flex;
+  justify-content: space-around;
   /* background: yellow; */
-}
-.main{
-  display: grid;
-  grid-template-rows: 500px 500px 700px 500px;
-}
-.about-icons img{
-  height: 100px;
-  margin:3px;
-  padding: 10px;
 }
