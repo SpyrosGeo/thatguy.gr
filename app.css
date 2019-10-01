@@ -106,3 +106,76 @@ box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25)
   justify-content: space-around;
   /* background: yellow; */
 }
+
+
+/* entire container, keeps perspective */
+.flip-container {
+  -webkit-perspective: 1000;
+  background: transparent;
+  margin: 100px auto;
+}
+
+/* flip the pane when clicked */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+  -webkit-transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 280px;
+}
+
+/* flip speed goes here */
+.flipper {
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  background:rgba(70, 7, 110, 0.4);
+}
+.front p {
+  padding: 10px;
+}
+
+/* back, initially hidden pane */
+.back {
+  display: grid;
+  /* justify-content: center; */
+  -webkit-transform: rotateY(180deg);
+  background: rgba(70, 7, 130, 0.4);
+  padding: 40px;
+}
+.modal-body {
+  display: flex;
+}
+.modal-footer {
+  /* background-color: blue; */
+  display: flex;
+  justify-content: space-around;
+}
+.modal-footer a{
+text-decoration: none;
+background:rgba(70, 7, 110, 0.7);
+color:white;
+padding: 5px;
+transition: 0.8 cubic-bezier(0.2,1,0.2, 1);
+}
+.modal-footer a:hover{
+  transform: translateY(-5px);
+}
+
+#nevernote {
+  background:rgba(70, 7, 110, 0.3);
+}
