@@ -40,8 +40,7 @@ body {
 
 }
 .header button{
-  height: 5vh;
-  width: 10vw;
+
   border: none;
   background: rgba(70, 7, 130, 0.4);
   color: white;
