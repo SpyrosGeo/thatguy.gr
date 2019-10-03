@@ -11,8 +11,8 @@ body {
   font-weight: 500;
   background-repeat: no-repeat;
   background: #bdc3c7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #2c3e50, #7c8f9c) fixed;  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #2c3e50, #7c8f9c) fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to left, #2e343d, #14191c) fixed;  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #2e343d, #14191c) fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   font-family: 'Turret Road', cursive;
 
@@ -26,24 +26,33 @@ body {
 }
 
 .header{
-  /* width:100%; */
-  /* https://media.giphy.com/media/pVGsAWjzvXcZW4ZBTE/giphy.gif */
-   background-image: url('https://images.unsplash.com/photo-1567640069022-b93f580eadd7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
-  /* background-repeat: no-repeat; */
+   background-image: url('https://media2.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif');
   background-position: center;
   background-size:cover;
+  /* filter: blur(2px); */
+  /* -webkit-filter:blur(5px); */
   clip-path: polygon(
   0 0, /* left top */
   100% 0, /* right top */
   100% 100%, /* right bottom */
   0 90% /* left bottom */
 );
-  /* background-size: contain; */
-  padding-top: 200px;
+  /* padding-top: 200px;
   margin-bottom: 2px;
-  color: white;
+  color: white; */
 }
-.header button{
+.header-text {
+  display: inline-block;
+  border:1px solid white;
+  margin-top: 200px;
+  padding:25px 50px 25px;
+  color: white;
+  z-index: 2;
+  background: -webkit-linear-gradient(to left, #2e343d, #14191c) fixed;  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, rgba(46, 52, 61, 0.8), rgba(20, 25, 28, 0.7)) fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header-text button{
   padding: 3px 6px 3px;
   border: 1px solid white;
   border-radius: 5%;
@@ -99,8 +108,8 @@ body {
   0 100% /* left bottom */
   );
   background-repeat: no-repeat;
-  background-position: center;
-  background-image: url('https://images.unsplash.com/photo-1563486279591-a05115bc931f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2726&q=80');
+  /* background-position: center; */
+  background-image: url('https://images.unsplash.com/photo-1437751059337-ea72d4f73fcf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2684&q=80');
   padding-top: 200px;
   color:white;
   margin-bottom: 10px;
@@ -162,6 +171,7 @@ box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25)
 
 /* hide back of pane during swap */
 .front, .back {
+  border:1px solid white;
   border-radius: 15%;
 	-webkit-backface-visibility: hidden;
 	position: absolute;
