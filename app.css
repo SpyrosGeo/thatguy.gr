@@ -139,9 +139,9 @@ box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25)
 
 /* PROJECTS **********************************************************************************************888*/
 .projects-container{
-  display:flex;
+  /* display:flex;
   justify-content: center;
-  align-content: center;
+  align-content: center; */
   /* background: yellow; */
 }
 
